@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Car Insurance Registration Form</h2>
+        <form id="insurance-form">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="car-make">Car Make</label>
+                <input type="text" id="car-make" name="car-make" required>
+            </div>
+            <div class="form-group">
+                <label for="car-model">Car Model</label>
+                <input type="text" id="car-model" name="car-model" required>
+            </div>
+            <div class="form-group">
+                <label for="car-year">Car Year</label>
+                <input type="number" id="car-year" name="car-year" min="1900" max="2099" required>
+            </div>
+            <div class="form-group">
+                <label for="license-plate">License Plate Number</label>
+                <input type="text" id="license-plate" name="license-plate" required>
+            </div>
+            <div class="form-group">
+                <label for="insurance-type">Insurance Type</label>
+                <select id="insurance-type" name="insurance-type" required>
+                    <option value="">Select Insurance Type</option>
+                    <option value="Comprehensive">Comprehensive</option>
+                    <option value="Third Party Liability">Third Party Liability</option>
+                    <option value="Collision">Collision</option>
+                    <option value="Uninsured Motorist">Uninsured Motorist</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="policy-duration">Policy Duration (months)</label>
+                <input type="number" id="policy-duration" name="policy-duration" min="1" max="60" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
